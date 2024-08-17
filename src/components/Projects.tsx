@@ -30,6 +30,14 @@ const ProjectsData = [
 
     link: '#',
   },
+  {
+    id: 5,
+    name: 'Web Development company',
+    image: 'restaurant.jpg',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+
+    link: '#',
+  },
 ];
 
 function Projects() {
