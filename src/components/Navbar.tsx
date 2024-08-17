@@ -5,22 +5,27 @@ export const NavLinks = [
   {
     id: 1,
     name: 'HOME',
-    link: '/#',
+    link: '#',
+  },
+  {
+    id: 4,
+    name: 'SKILLS',
+    link: '#skills',
   },
   {
     id: 2,
     name: 'PROJECTS',
-    link: '/#project',
+    link: '#project',
   },
   {
-    id: 3,
-    name: 'ABOUT',
-    link: '/#about',
+    id: 5,
+    name: 'EXPERIENCE',
+    link: '#experience',
   },
   {
-    id: 4,
+    id: 6,
     name: 'CONTACT',
-    link: '/#contact',
+    link: '#contact',
   },
 ];
 
@@ -40,7 +45,7 @@ function Navbar() {
                 <li key={navLink.id}>
                   <a
                     href={navLink.link}
-                    className='inline-block text-lg font-medium hover:text-primary py-3 duration-500'
+                    className='inline-block font-[400] hover:text-primary py-3 duration-500'
                   >
                     {navLink.name}
                   </a>

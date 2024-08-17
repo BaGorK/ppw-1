@@ -6,7 +6,6 @@ type Theme = 'dark' | 'light';
 function DarkMode() {
   const [theme, setTheme] = useState<Theme>(() => {
     const localTheme = localStorage.getItem('ppw1Theme') as Theme;
-    console.log(localTheme);
     return localTheme || 'light';
   });
 
