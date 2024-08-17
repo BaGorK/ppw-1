@@ -1,3 +1,5 @@
+import DarkMode from './DarkMode';
+
 /* eslint-disable react-refresh/only-export-components */
 export const NavLinks = [
   {
@@ -11,12 +13,12 @@ export const NavLinks = [
     link: '/#project',
   },
   {
-    id: 1,
+    id: 3,
     name: 'ABOUT',
     link: '/#about',
   },
   {
-    id: 1,
+    id: 4,
     name: 'CONTACT',
     link: '/#contact',
   },
@@ -24,26 +26,31 @@ export const NavLinks = [
 
 function Navbar() {
   return (
-    <div className='shadow-md w-full'>
-      <div className='container '>
-        <div className='flex justify-between'>
+    <div className='shadow-md  w-full dark:bg-black dark:text-white'>
+      <div className='container py-2 sm:py-0'>
+        <div className='flex justify-between items-center'>
           <div>
-            <span className='text-3xl font-bold'>Portfolio</span>
+            <span className='text-3xl font-bold'>PortFolio</span>
           </div>
-          <div>
-            <ul>
+
+          {/* links */}
+          <nav className='hidden sm:block'>
+            <ul className='flex items-center gap-6'>
               {NavLinks.map((navLink) => (
-                <li key={navLink.id} className='inline-block mx-4'>
+                <li key={navLink.id}>
                   <a
                     href={navLink.link}
-                    className='text-gray-500 hover:text-gray-900'
+                    className='inline-block text-lg font-medium hover:text-primary py-3 duration-500'
                   >
                     {navLink.name}
                   </a>
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
+
+          {/* dark mode */}
+          <DarkMode />
         </div>
       </div>
     </div>
