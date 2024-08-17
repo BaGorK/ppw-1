@@ -63,7 +63,7 @@ function Projects() {
             {ProjectsData.map((project, i) => (
               <div
                 key={i}
-                className='rounded-xl flex flex-col shadow-lg my-2 hover:shadow-2xl duration-300  dark:bg-dark/80'
+                className='rounded-xl flex flex-col shadow-lg my-2 hover:shadow-2xl duration-300  dark:bg-dark/80 overflow-hidden'
               >
                 <div className='h-fit w-full bg-white '>
                   <img

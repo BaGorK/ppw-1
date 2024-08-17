@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <div className='dark:bg-black dark:text-white py-14'>
+    <div className='dark:bg-black dark:text-white pb-14'>
       <div className='container place-items-center gap-3 grid grid-cols-1 sm:grid-cols-2'>
         {/* image */}
         <div>
@@ -23,7 +23,7 @@ function Hero() {
           </p>
           <a
             href='.'
-            className='inline-block uppercase tracking-wider text-white bg-primary px-3 py-2'
+            className='inline-block uppercase tracking-wider text-white bg-primary px-6 py-2'
           >
             About Me
           </a>

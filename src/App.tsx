@@ -1,6 +1,7 @@
 import {
   Contact,
   Experience,
+  Footer,
   Hero,
   Navbar,
   Projects,
@@ -17,6 +18,7 @@ function App() {
         <Experience />
         <Projects />
         <Contact />
+        <Footer />
       </div>
     </>
   );
